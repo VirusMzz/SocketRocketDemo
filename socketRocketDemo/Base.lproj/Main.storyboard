@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUP-dv-dqd">
+                                <rect key="frame" x="40" y="157" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zez-V3-6Na">
+                                <rect key="frame" x="239" y="70" width="56" height="30"/>
+                                <state key="normal" title="connect"/>
+                                <connections>
+                                    <action selector="connect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="odg-w2-RMz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwW-1Z-rvW">
+                                <rect key="frame" x="239" y="148" width="34" height="30"/>
+                                <state key="normal" title="send"/>
+                                <connections>
+                                    <action selector="send:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LsQ-Em-QQx"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="input" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0eO-cK-1Me">
+                                <rect key="frame" x="40" y="70" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="ffd-WF-c5l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJw-um-MrU">
+                                <rect key="frame" x="323" y="70" width="56" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="p6Z-eb-X2o"/>
+                                </constraints>
+                                <state key="normal" title="discon"/>
+                                <connections>
+                                    <action selector="disconnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAJ-tX-y76"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RUP-dv-dqd" firstAttribute="leading" secondItem="0eO-cK-1Me" secondAttribute="leading" id="8U0-Cg-ynn"/>
+                            <constraint firstItem="Zez-V3-6Na" firstAttribute="baseline" secondItem="BJw-um-MrU" secondAttribute="baseline" id="Bpd-9t-731"/>
+                            <constraint firstItem="0eO-cK-1Me" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="FZl-Ev-frh"/>
+                            <constraint firstItem="Zez-V3-6Na" firstAttribute="leading" secondItem="iwW-1Z-rvW" secondAttribute="leading" id="HeQ-AA-Du7"/>
+                            <constraint firstItem="iwW-1Z-rvW" firstAttribute="bottom" secondItem="RUP-dv-dqd" secondAttribute="bottom" id="KzD-M5-M6r"/>
+                            <constraint firstItem="RUP-dv-dqd" firstAttribute="width" secondItem="0eO-cK-1Me" secondAttribute="width" id="L7c-dS-Pss"/>
+                            <constraint firstItem="0eO-cK-1Me" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="O7T-P0-Egi"/>
+                            <constraint firstItem="RUP-dv-dqd" firstAttribute="top" secondItem="0eO-cK-1Me" secondAttribute="bottom" constant="57" id="T53-LU-iZW"/>
+                            <constraint firstItem="RUP-dv-dqd" firstAttribute="top" secondItem="0eO-cK-1Me" secondAttribute="bottom" constant="20" id="c50-nJ-nF4"/>
+                            <constraint firstItem="Zez-V3-6Na" firstAttribute="leading" secondItem="0eO-cK-1Me" secondAttribute="trailing" constant="49" id="iGK-Nm-hld"/>
+                            <constraint firstItem="BJw-um-MrU" firstAttribute="leading" secondItem="Zez-V3-6Na" secondAttribute="trailing" constant="28" id="scg-Ng-MJS"/>
+                            <constraint firstItem="Zez-V3-6Na" firstAttribute="top" secondItem="0eO-cK-1Me" secondAttribute="top" id="v4X-OP-eLS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="c50-nJ-nF4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="inputTX" destination="0eO-cK-1Me" id="kQM-Uz-wXw"/>
+                        <outlet property="screen" destination="RUP-dv-dqd" id="a3E-Ip-fhA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
